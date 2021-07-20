@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.clock {
+  height: 100vh;
+  background-color: #313131;
+  width: 100vw;
+  position: absolute;
+}
+.clock > h1 {
+  position: relative;
+  font-family: "Lato", "sans-serif";
+  color: white;
+  font-size: 50px;
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.date {
+  margin-top: 3rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: relative;
+  width: 30%;
+  height: 30%;
+  display: inline-block;
+  margin-left: 60%;
+}
+
+.date > .date-item {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+.date > .date-item > .date-heading {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-family: "lato", "sans-serif";
+}
+
+.date > .date-item > .date-content {
+  font-family: "Source Code Pro", "sans-serif";
+  font-weight: bold;
+  margin-top: 4px;
+  font-size: 18px;
+  color: rgb(83, 102, 251);
+}
+
+.time {
+  position: relative;
+  width: 70%;
+  height: 50%;
+  text-align: center;
+  margin: auto;
+  display: grid;
+  margin-top: -6rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.time-item {
+  display: inline-block;
+}
+
+.time-item > .time-heading {
+  font-size: 54px;
+  color: rgb(255, 255, 255);
+  font-family: "lato", "sans-serif";
+}
+
+.time-item > .time-content {
+  font-size: 80px;
+  color: rgb(83, 102, 251);
+  margin-top: 1.2rem;
+  font-family: "Source Code Pro", "sans-serif";
+}
